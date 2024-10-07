@@ -1,0 +1,2 @@
+const e=document.querySelector("thead"),l=document.querySelector("tbody");[...e.children[0].children].forEach((e,c)=>{e.onclick=e=>{let t=[...l.children].sort((e,l)=>{let t=[...e.children][c].textContent,r=[...l.children][c].textContent;return t.includes("$")||2===c?(t=+t.replace("$","").replaceAll(",",""))-(r=+r.replace("$","").replaceAll(",","")):t.localeCompare(r)});l.append(...t)}});
+//# sourceMappingURL=index.6cda995d.js.map
